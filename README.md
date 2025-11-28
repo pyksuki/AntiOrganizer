@@ -183,4 +183,86 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 Get-Content "$env:USERPROFILE\Documents\AntiOrganizer_Logs\*.txt" | Select-Object -Last 20
 ```
 
+## Contributing
+
+We welcome contributions! Here's how to help:
+
+### Report Bugs
+1. Check existing issues first (avoid duplicates)
+2. Include your Windows version
+3. Include your PowerShell version
+4. Describe steps to reproduce
+
+### Suggest Features
+1. Check existing discussions
+2. Clearly describe what you want
+3. Explain why it would be useful
+
+### Submit Changes
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/your-feature`
+3. Make your changes
+4. Commit: `git commit -m "Add your feature"`
+5. Push: `git push origin feature/your-feature`
+6. Open a Pull Request
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**MIT License Summary:**
+- ✅ You can use it commercially
+- ✅ You can modify it
+- ✅ You can distribute it
+- ✅ You can use it privately
+- ❌ We're not liable if something goes wrong
+- ❌ We provide no warranty
+
+
+## Support
+
+### Getting Help
+
+- 📖 Check [Troubleshooting](#troubleshooting) section above
+- 📝 Review log files in `Documents\AntiOrganizer_Logs\`
+- 🔍 Search existing GitHub issues
+- 💬 Create a new GitHub issue
+
+### Reporting Bugs
+
+Include:
+- Windows version
+- PowerShell version
+- Error messages
+- Steps to reproduce
+
+
+## FAQ
+
+**Q: Will this script delete my files?**
+A: No. The script only moves files to different folders. Original content is preserved.
+
+**Q: Can I undo the organization?**
+A: All operations are logged. You can review logs to manually reverse if needed.
+
+**Q: Is it safe to run multiple times?**
+A: Yes. The script won't duplicate work - it skips already-organized files.
+
+**Q: Can I exclude certain folders?**
+A: Currently no, but you can modify the source folders in the script.
+
+**Q: Does it work on Mac or Linux?**
+A: No, it's Windows-specific PowerShell. Unix versions may come later.
+
+
+
+---
+
+**Made with ❤️ for Windows Editor power users**
+
+Last Updated: November 2025 | Version: 3.0
+
+
 
